@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "e86de264-9422-405a-b62a-b7a63dcab4fd",
+		"name": "Spring Web Service(MGN)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22524158"
+	},
+	"item": [
+		{
+			"name": "Find All MGN_MGNI(Json And Xml)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/mgn/findAllMgniJsonAndXml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"mgn",
+						"findAllMgniJsonAndXml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Clearing Margin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cmNo\": \"1111111\",\r\n    \"kacType\": \"1\",\r\n    \"bankNo\": \"111\",\r\n    \"ccy\": \"TWD\",\r\n    \"pvType\": \"2\",\r\n    \"bicaccNo\": \"0912345678\",\r\n    \"iType\": \"1\",\r\n    \"clearingAccountList\": \r\n    [\r\n        {\r\n            \"accNo\" : \"000000\",\r\n            \"amt\" : 3000\r\n        },\r\n        {\r\n            \"accNo\" : \"111111\",\r\n            \"amt\" : 7000\r\n        },\r\n        {\r\n            \"accNo\" : \"000000\",\r\n            \"amt\" : 3000\r\n        }\r\n    ],\r\n    \"ctName\": \"HuaiChiu\",\r\n    \"ctTel\": \"0912345678\",\r\n    \"pReason\": \"coco\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/mgn/createClearingMargin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"mgn",
+						"createClearingMargin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Clearing Margin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"MGI20221004222746688\",\r\n    \"cmNo\": \"1111111\",\r\n    \"kacType\": \"1\",\r\n    \"bankNo\": \"111\",\r\n    \"ccy\": \"TWD\",\r\n    \"pvType\": \"2\",\r\n    \"bicaccNo\": \"123456789\",\r\n    \"iType\": \"1\",\r\n    \"clearingAccountList\": \r\n    [\r\n        {\r\n            \"accNo\" : \"000000\",\r\n            \"amt\" : 3000\r\n        },\r\n        {\r\n            \"accNo\" : \"111111\",\r\n            \"amt\" : 7000\r\n        },\r\n        {\r\n            \"accNo\" : \"000000\",\r\n            \"amt\" : 3000\r\n        },\r\n        {\r\n            \"accNo\" : \"333333\",\r\n            \"amt\" : 10\r\n        }\r\n    ],\r\n    \"ctName\": \"Maggie\",\r\n    \"ctTel\": \"0967362865\",\r\n    \"pReason\": \"good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/mgn/updateClearingMargin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"mgn",
+						"updateClearingMargin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Clearing Margin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "MGI20221027141320416",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/mgn/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"mgn",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Target MGNI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"kacType\": \"1\",\r\n    \"ccy\": \"TWD\",\r\n    \"date\": \"20220929\"\r\n}\r\n\r\n// {\r\n//     \"id\": \"MGI20220930154421878\",\r\n//     \"kacType\": \"1\",\r\n//     \"ccy\": \"TWD\",\r\n//     \"date\": \"20220929\"\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/mgn/search/Mgni",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"mgn",
+						"search",
+						"Mgni"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Target CASHI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"accNo\": \"000000\",\r\n    \"ccy\": \"TWD\",\r\n    \"page\":1,\r\n    \"size\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/mgn/search/Cashi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"mgn",
+						"search",
+						"Cashi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActiveMQ - Topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Topic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Topic"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
