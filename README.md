@@ -1,4 +1,4 @@
-# Spring_Restful-Socket-MQ
+# Spring_Restful-Socket-ActiveMQ(有加uid_針對ActiveMQ可以處理同一筆reques+reponse機制)
 * [Http、RESTful、RPC、MQ、Socket 概念與區別](https://www.jianshu.com/p/e077193efe79)
 
 ## JSON Web Token (JWT)
