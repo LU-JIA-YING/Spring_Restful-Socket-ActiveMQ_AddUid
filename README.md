@@ -31,6 +31,10 @@
 ### Sprint 4 實作
 - [X] 整合 Restful, Socket, MQ (CRUD)
 
+下載 ActiveMQ : http://activemq.apache.org/components/classic/download/ (下載 zip 文件並將其解壓縮)  
+執行 apache-activemq-5.17.2\bin\win64\activemq.bat的檔案(程式中config->OpenExe有寫啟動檔，可以不用手動開)  
+ActiveMQ 控制台 : http://localhost:8161/admin/ 帳密admin  
+  
 * 1:查詢Cashi全部資料/ 2:用Id查詢Mgni/ 3:用Id查詢Cashi/ 4:Mgni動態查詢/ 5:Mgni新增/ 6:Mgni更新/ 7:Mgni刪除
 * 新增、修改、刪除時，Mgni跟Cashi會連動
 
