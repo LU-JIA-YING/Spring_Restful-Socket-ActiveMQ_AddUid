@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.Spring.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.169 s <<< FAILURE! - in com.example.Spring.ApplicationTests
+contextLoads  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.Spring.controller.QueueConsumerController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6659c656]
+Caused by: java.lang.NoClassDefFoundError: Lorg/apache/log4j/Logger;
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Logger
+
