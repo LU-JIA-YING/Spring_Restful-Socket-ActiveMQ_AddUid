@@ -29,16 +29,15 @@
 - [ ] 加密處理
 
 ### Sprint 4 實作
-- [ ] 整合 Restful, Socket, MQ (CRUD)
+- [X] 整合 Restful, Socket, MQ (CRUD)
 
 * 1:查詢Cashi全部資料/ 2:用Id查詢Mgni/ 3:用Id查詢Cashi/ 4:Mgni動態查詢/ 5:Mgni新增/ 6:Mgni更新/ 7:Mgni刪除
 * 新增、修改、刪除時，Mgni跟Cashi會連動
 
 ```java=
-
 < Ture >  
       
-	      {"requestType":"1","request":{}}
+	{"requestType":"1","request":{}}
 
         {"requestType":"2","request":{"cmNo":"9","kacType":"1","bankNo":"999","ccy":"TWD","pvType":"1","bicaccNo":"0000000","iType":"1","pReason":"money","clearingAccountList":[{"accNo":"1","amt":10},{"accNo":"2","amt":20}],"ctName":"Joey","ctTel":"12345678"}}
 
